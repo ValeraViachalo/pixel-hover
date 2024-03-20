@@ -66,12 +66,13 @@ const CardProject = ({ srcBg, srcBgZoomed, srcLogo }) => {
   const animLeaveStepsHandler = () => {
     setPixelSize(28);
     setImage(srcBg);
-
+    
     setTimeout(() => {
       setPixelSize(18);
     }, 200);
-
+    
     setTimeout(() => {
+      setImage(srcBg);
       setPixelSize(0);
     }, 400);
   };
